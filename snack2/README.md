@@ -15,7 +15,7 @@
                             102 Piero della Francesca   50
                             120 Francesca da Polenta    84
 
-// inizizializzo un vettore di oggetti con all'interno, per ogni singolo studente; l'id, il nominativo e la somma totale dei suoi voti.
+// inizializzo un vettore di oggetti con all'interno, per ogni singolo studente; l'id, il nominativo e la somma totale dei suoi voti.
 // trasformo da minuscolo a maiuscolo i caratteri, salvando il nuovo vettore in una variabile
 // stampo il nuovo vettore in console
 // vado a prelevare da questo vettore solo gli studenti che hanno un totale di voti superiore a 70, salvando il nuovo vettore in altra variabile
