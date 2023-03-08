@@ -12,10 +12,9 @@ const students= [
 console.log(students);
 
 const toUpper= students.map((element) => {
-    element.firstname.toUpperCase;
-    console.log(element.firstname)
-})
-
+    return element.toUpperCase;
+});
+console.log(toUpper);
 
 const byGrades = students.filter((element) => {
     
