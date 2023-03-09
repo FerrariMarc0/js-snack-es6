@@ -10,14 +10,19 @@ const guests= [
     {name: "Little", lastName: "Tony"},
     {name: "Amedeo", lastName: "Minghi"},
     {name: "Herbert", lastName: "Ballerina"},
-    {name: "George", lastName: "Clooney",}
+    {name: "George", lastName: "Clooney"}
 ]
 
 console.log(guests);
 
-guests.forEach((element, index) => {
-    console.log(`
-    Il Signor ${element.name} ${element.lastName} siede al tavolo VIP al posto ${index + 1}
+const guestsList= guests.map((element, i) => {
+    return {
+        tableName: 'Tavolo VIP',
+        guest: element,
+        place: i+1
+    }
+    
+});
+console.log(`
+    Il Signor ${element.name} ${element.lastName} siede al tavolo VIP al posto ${i + 1}
     `);
-
-})
