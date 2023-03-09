@@ -33,10 +33,10 @@ const clubList= clubs.map((element)=>{
     element.penalty = rnd(1, 50);
     return element;
 })
-
+let team
 const finalList=[];
 const newClubList= clubList.filter((element)=>{
-    const team= element.team;
+    let team= element.team;
     const penalty= element.penalty;
     finalList.push({team, penalty});
     
@@ -45,3 +45,15 @@ const newClubList= clubList.filter((element)=>{
 console.log(finalList);
 console.log(clubs);
 console.log(clubList);
+
+
+  
+
+  finalList.forEach((element)=>{
+    const toDom= document.getElementById('league');
+    const list= document.createElement('li');
+    toDom.append(list);
+    list.innerHTML = element.team;
+    console.log(element.team, element.penalty);
+
+  })
